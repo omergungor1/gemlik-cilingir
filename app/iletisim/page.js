@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SITE } from "@/lib/constants";
+import GoogleAdsConversion from "@/components/GoogleAdsConversion";
 
 export const metadata = {
   title: "İletişim",
@@ -15,6 +16,7 @@ export const metadata = {
 export default function IletisimPage() {
   return (
     <article>
+      <GoogleAdsConversion />
       <section className="bg-[#0A2540] py-12 md:py-16">
         <div className="mx-auto max-w-6xl px-4">
           <nav className="mb-4 text-sm text-white/80" aria-label="Breadcrumb">

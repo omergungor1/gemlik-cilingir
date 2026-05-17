@@ -4,6 +4,7 @@ import { getLocalBusinessSchema } from "@/lib/jsonld";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StickyCTA from "@/components/StickyCTA";
+import GoogleTag from "@/components/GoogleTag";
 
 export const metadata = {
   metadataBase: new URL(SITE.domain),
@@ -67,6 +68,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="min-h-screen bg-white text-[#2E2E2E] antialiased">
+        <GoogleTag />
         <Header />
         <main>{children}</main>
         <Footer />
